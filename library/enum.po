@@ -6,13 +6,14 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-28 15:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-09-20 21:27+0200\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: ../Doc/library/enum.rst:2
 msgid ":mod:`enum` --- Support for enumerations"
@@ -28,6 +29,10 @@ msgid ""
 "constant values.  Within an enumeration, the members can be compared by "
 "identity, and the enumeration itself can be iterated over."
 msgstr ""
+"Une énumération est un ensemble de noms symboliques (membres) liés à des "
+"valeurs uniques et constantes. Au sein d'une énumération, les membres "
+"peuvent être comparés sur la base de leur identité, et on peut itérer sur "
+"l'énumération elle-même."
 
 #: ../Doc/library/enum.rst:24
 msgid "Module Contents"
@@ -40,18 +45,26 @@ msgid ""
 "`Flag`, and :class:`IntFlag`.  It also defines one decorator, :func:"
 "`unique`, and one helper, :class:`auto`."
 msgstr ""
+"Ce module définit quatre classes d'énumération qui peuvent être utilisées "
+"pour définir des ensembles de noms et de valeurs: :class:'Enum', :"
+"class:'IntEnum', :class:'Flag', et :class:'IntFlag'. Il définit aussi un "
+"décorateur, :func:'unique' et un helper, :class:'auto'."
 
 #: ../Doc/library/enum.rst:33
 msgid ""
 "Base class for creating enumerated constants.  See section `Functional API`_ "
 "for an alternate construction syntax."
 msgstr ""
+"Classe de base pour la création de constantes énumérées. Voir la section "
+"'API Fonctionnelle'_ pour une syntaxe de construction alternative."
 
 #: ../Doc/library/enum.rst:38
 msgid ""
 "Base class for creating enumerated constants that are also subclasses of :"
 "class:`int`."
 msgstr ""
+"Classe de base pour créer des constantes énumérées qui sont aussi des sous-"
+"classes de :class: 'int'."
 
 #: ../Doc/library/enum.rst:43
 msgid ""
@@ -59,21 +72,32 @@ msgid ""
 "bitwise operators without losing their :class:`IntFlag` membership. :class:"
 "`IntFlag` members are also subclasses of :class:`int`."
 msgstr ""
+"Classe de base pour créer des constantes énumérées qui peuvent être "
+"combinées en utilisant des opérations sur les bits sans perdre leurs "
+"appartenance au :class:'IntFlag'. Les membres :class:'IntFlag' sont aussi "
+"des sous-classes de :classe:'int'."
 
 #: ../Doc/library/enum.rst:49
 msgid ""
 "Base class for creating enumerated constants that can be combined using the "
 "bitwise operations without losing their :class:`Flag` membership."
 msgstr ""
+"Classe de base pour créer des constantes énumérées qui peuvent être "
+"combinées en utilisant des opérations sur les bits sans perdre leur "
+"appartenance à :class:'Flag'."
 
 #: ../Doc/library/enum.rst:54
 msgid ""
 "Enum class decorator that ensures only one name is bound to any one value."
 msgstr ""
+"Décorateur de la classe Enum assurant qu'un seul nom soit lié à une seule "
+"des valeurs."
 
 #: ../Doc/library/enum.rst:58
 msgid "Instances are replaced with an appropriate value for Enum members."
 msgstr ""
+"Les instances sont remplacées par une valeur adéquate pour tous les membres "
+"d'Enum."
 
 #: ../Doc/library/enum.rst:60
 msgid "``Flag``, ``IntFlag``, ``auto``"
@@ -81,7 +105,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:64
 msgid "Creating an Enum"
-msgstr ""
+msgstr "Créer un Enum"
 
 #: ../Doc/library/enum.rst:66
 msgid ""
@@ -90,10 +114,14 @@ msgid ""
 "`Functional API`_.  To define an enumeration, subclass :class:`Enum` as "
 "follows::"
 msgstr ""
+"Les énumérations sont créées en utilisant la syntaxe :keyword:'class', ce "
+"qui rend leur lecture et leur écriture aisées. Une méthode de création "
+"alternative est décrite dans 'API Fonctionnelle\"_. Pour définir une "
+"énumération, sous-classez :class:'Enum' comme suit : ::"
 
 #: ../Doc/library/enum.rst:78
 msgid "Enum member values"
-msgstr ""
+msgstr "Valeurs des membres d'Enum"
 
 #: ../Doc/library/enum.rst:80
 msgid ""
@@ -101,27 +129,33 @@ msgid ""
 "exact value is unimportant you may use :class:`auto` instances and an "
 "appropriate value will be chosen for you.  Care must be taken if you mix :"
 "class:`auto` with other values."
-msgstr ""
+msgstr "Les valeurs des membres peuvent "
 
 #: ../Doc/library/enum.rst:85
 msgid "Nomenclature"
-msgstr ""
+msgstr "Nomenclature"
 
 #: ../Doc/library/enum.rst:87
 msgid "The class :class:`Color` is an *enumeration* (or *enum*)"
-msgstr ""
+msgstr "La classe :class: 'Color' est une *énumération* (ou *enum*)"
 
 #: ../Doc/library/enum.rst:88
 msgid ""
 "The attributes :attr:`Color.RED`, :attr:`Color.GREEN`, etc., are "
 "*enumeration members* (or *enum members*) and are functionally constants."
 msgstr ""
+"Les attributs :attr:`Color.RED`, :attr:`Color.GREEN`, etc., sont des "
+"*membres de l'énumération* (ou des *membres de l'enum*) et sont, au niveau "
+"fonctionnel, des constantes."
 
 #: ../Doc/library/enum.rst:90
 msgid ""
 "The enum members have *names* and *values* (the name of :attr:`Color.RED` is "
 "``RED``, the value of :attr:`Color.BLUE` is ``3``, etc.)"
 msgstr ""
+"Les membres de l'enum ont des *noms* et des *valeurs* (le nom de :"
+"attr:'Color.RED' est ''RED'', la valeur de :attr:'Color.BLUE' est ''3'', "
+"etc.)"
 
 #: ../Doc/library/enum.rst:96
 msgid ""
@@ -176,7 +210,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:177
 msgid "Duplicating enum members and values"
-msgstr ""
+msgstr "Duplication des membres et des valeurs d'enum"
 
 #: ../Doc/library/enum.rst:179
 msgid "Having two enum members with the same name is invalid::"
@@ -217,7 +251,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:241
 msgid "Using automatic values"
-msgstr ""
+msgstr "Utilisation des valeurs automatiques"
 
 #: ../Doc/library/enum.rst:243
 msgid "If the exact value is unimportant you can use :class:`auto`::"
@@ -238,7 +272,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:277
 msgid "Iteration"
-msgstr ""
+msgstr "Itération"
 
 #: ../Doc/library/enum.rst:279
 msgid "Iterating over the members of an enum does not provide the aliases::"
@@ -303,7 +337,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:369
 msgid "Then::"
-msgstr ""
+msgstr "Puis::"
 
 #: ../Doc/library/enum.rst:378
 msgid ""
@@ -334,7 +368,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:403
 msgid "But this is allowed::"
-msgstr ""
+msgstr "Mais ceci est autorisé::"
 
 #: ../Doc/library/enum.rst:414
 msgid ""
@@ -443,7 +477,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:0
 msgid "names"
-msgstr ""
+msgstr "noms"
 
 #: ../Doc/library/enum.rst:508
 msgid ""
@@ -624,7 +658,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:718
 msgid "Some rules:"
-msgstr ""
+msgstr "Quelques règles :"
 
 #: ../Doc/library/enum.rst:720
 msgid ""
@@ -666,7 +700,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:741
 msgid "Interesting examples"
-msgstr ""
+msgstr "Exemples intéressants"
 
 #: ../Doc/library/enum.rst:743
 msgid ""
@@ -678,7 +712,7 @@ msgstr ""
 
 #: ../Doc/library/enum.rst:750
 msgid "Omitting values"
-msgstr ""
+msgstr "Omission de valeurs"
 
 #: ../Doc/library/enum.rst:752
 msgid ""
